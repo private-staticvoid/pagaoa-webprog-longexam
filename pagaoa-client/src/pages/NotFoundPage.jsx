@@ -4,11 +4,9 @@ import Robot from "../assets/img/robot.png";
 const NotFoundPage = () => {
   return (
     <div className="flex w-full flex-col bg-[#070546] text-[#d4af37]">
-      {/* MAIN ERROR SECTION */}
       <section className="border-b-2 border-[#d4af37]/30 px-6 py-16 sm:px-12 lg:py-24">
         <div className="mx-auto max-w-5xl">
           <div className="flex flex-col items-center md:flex-row md:justify-between md:gap-12">
-            {/* TEXT CONTENT */}
             <div className="order-2 mt-10 text-center md:order-1 md:mt-0 md:text-left">
               <p className="text-xs font-bold uppercase tracking-[0.4em] text-[#d4af37]/60">
                 System Error

@@ -50,10 +50,8 @@ function ProductPage() {
         </div>
       </section>
 
-      {/* IMAGE + DETAILS - Compressed margins and Square Image */}
       <section className="px-6 pb-8 sm:px-12">
         <div className="mx-auto max-w-3xl">
-          {/* IMAGE - Forced Square and smaller max-width */}
           <div className="mx-auto max-w-87.5 overflow-hidden rounded-xl bg-[#0b0a2f]">
             <img
               src={img[product.image]}
@@ -62,7 +60,6 @@ function ProductPage() {
             />
           </div>
 
-          {/* CONTENT - Tighter spacing */}
           <div className="mt-5 space-y-3">
             {product.content.map((paragraph, index) => (
               <p

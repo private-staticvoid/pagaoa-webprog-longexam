@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 import Button from "./Button";
 
-// AUTO IMPORT IMAGES
 const images = import.meta.glob("../assets/img/*", {
   eager: true,
   import: "default",
@@ -17,14 +16,12 @@ const img = Object.fromEntries(
 const ProductCard = ({ product }) => {
   return (
     <div className="overflow-hidden rounded-2xl bg-[#0b0a2f] border border-[#d4af37]/10 hover:shadow-xl transition">
-      {/* IMAGE */}
       <img
         src={img[product.image]}
         alt={product.title}
         className="h-64 w-full object-cover"
       />
 
-      {/* CONTENT */}
       <div className="p-4">
         <h3 className="text-lg font-semibold text-[#d4af37]">
           {product.title}

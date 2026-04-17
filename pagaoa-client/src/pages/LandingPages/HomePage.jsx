@@ -2,13 +2,11 @@ import Button from "../../components/Button";
 import { Link } from "react-router-dom";
 import NUstorebg from "../../assets/img/NUstorebg.png";
 
-// AUTO IMPORT ALL IMAGES (VITE)
 const images = import.meta.glob("../../assets/img/*", {
   eager: true,
   import: "default",
 });
 
-// optional helper: clean names
 const img = Object.fromEntries(
   Object.entries(images).map(([path, value]) => {
     const name = path.split("/").pop();

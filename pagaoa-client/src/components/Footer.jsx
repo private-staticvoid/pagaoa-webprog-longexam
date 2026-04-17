@@ -5,7 +5,6 @@ const Footer = () => {
   return (
     <footer className="bg-[#04022d] text-[#fef6e9] border-t border-[#d4af37]/30">
       <div className="max-w-6xl mx-auto px-6 py-10 grid gap-8 md:grid-cols-3">
-        {/* BRAND */}
         <div>
           <div className="flex items-center gap-2">
             <img
@@ -24,7 +23,6 @@ const Footer = () => {
           </p>
         </div>
 
-        {/* QUICK LINKS */}
         <div>
           <h4 className="font-semibold mb-3 text-[#d4af37]">Quick Links</h4>
           <ul className="space-y-2 text-sm">
@@ -46,7 +44,6 @@ const Footer = () => {
           </ul>
         </div>
 
-        {/* CONTACT + SOCIALS */}
         <div>
           <h4 className="font-semibold mb-3 text-[#d4af37]">
             Contact & Follow Us
@@ -62,9 +59,7 @@ const Footer = () => {
             ✉️ support@nubdexchange.com
           </p>
 
-          {/* SOCIAL ICONS */}
           <div className="flex gap-4 mt-4">
-            {/* FACEBOOK */}
             <a
               href="https://www.facebook.com/profile.php?id=61570809652927"
               target="_blank"
@@ -77,7 +72,6 @@ const Footer = () => {
               />
             </a>
 
-            {/* INSTAGRAM PLACEHOLDER */}
             <a href="#" target="_blank" rel="noopener noreferrer">
               <img
                 src="https://static.vecteezy.com/system/resources/thumbnails/042/127/166/small/instagram-logo-on-square-style-with-transparent-background-free-png.png"
@@ -89,7 +83,6 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* BOTTOM BAR */}
       <div className="border-t border-[#d4af37]/20 text-center text-xs py-4 text-[#fef6e9]/60">
         © {new Date().getFullYear()} NubdExchange. All rights reserved.
       </div>

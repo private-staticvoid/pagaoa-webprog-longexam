@@ -10,15 +10,12 @@ const actionButtonClassName =
 const SignUpPage = () => {
   return (
     <div className="min-h-screen bg-[#070546] text-[#d4af37] px-6 py-10 sm:px-12">
-      {/* HEADER */}
       <h1 className="text-3xl font-bold tracking-tight sm:text-4xl">Sign Up</h1>
 
       <p className="mt-3 text-sm leading-6 text-[#f5d98b]/80 max-w-xl">
         Create a BulldogEx Shop account for faster checkout, order updates, and
         campus pickup details.
       </p>
-
-      {/* FORM */}
       <form className="mt-10 space-y-5 max-w-2xl">
         <div className="grid gap-5 sm:grid-cols-2">
           <div>
@@ -85,7 +82,6 @@ const SignUpPage = () => {
         </div>
       </form>
 
-      {/* LOGIN LINK */}
       <div className="mt-10 border-t border-[#d4af37]/20 pt-6 text-sm text-[#f5d98b]/70">
         Already have an account?{" "}
         <Link

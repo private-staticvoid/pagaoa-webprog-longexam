@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import heroImg from "../../assets/img/NUstorebg.png";
 import logo from "../../assets/img/nubdexchange_logo.png";
 
-// AUTO IMPORT IMAGES
 const images = import.meta.glob("../../assets/img/*", {
   eager: true,
   import: "default",
@@ -19,21 +18,15 @@ const img = Object.fromEntries(
 const AboutPage = () => {
   return (
     <div className="flex flex-col bg-[#070546] text-[#d4af37]">
-      {/* STORY */}
       <section className="relative h-[83vh] w-full overflow-hidden">
-        {/* BACKGROUND IMAGE */}
         <img
           src="https://goodnewspilipinas.com/wp-content/uploads/2024/07/NU-Laguna.webp"
           alt="NU Campus"
           className="absolute inset-0 h-full w-full object-cover"
         />
 
-        {/* OVERLAY */}
         <div className="absolute inset-0 bg-[#070546]/60" />
-
-        {/* CONTENT WRAPPER (IMPORTANT FIX) */}
         <div className="relative z-10 h-full w-full grid grid-cols-1 lg:grid-cols-2 items-center px-6 sm:px-12">
-          {/* LEFT TEXT */}
           <div className="max-h-full overflow-hidden">
             <p className="text-[11px] uppercase tracking-[0.3em] text-[#d4af37]/70 font-semibold">
               Our Story
@@ -68,10 +61,8 @@ const AboutPage = () => {
 
           <div className="flex justify-center items-center h-full">
             <div className="relative">
-              {/* CIRCULAR SMOKY BACKGROUND */}
               <div className="absolute inset-0 -z-10 h-56 w-56 sm:h-64 sm:w-64 rounded-full bg-[radial-gradient(circle,rgba(7,6,69,0.2)_0%,rgba(7,6,69,0.8)_60%,rgba(7,6,69,1)_100%)] blur-2xl" />
 
-              {/* LOGO */}
               <img
                 src={logo}
                 alt="Logo"
@@ -81,7 +72,6 @@ const AboutPage = () => {
           </div>
         </div>
       </section>
-      {/* MISSION / VISION */}
       <section className="bg-[#0b0a2f] px-6 py-16 sm:px-12">
         <div className="mb-10">
           <p className="text-[11px] uppercase tracking-[0.3em] text-[#d4af37]/70">
@@ -115,8 +105,6 @@ const AboutPage = () => {
           ))}
         </div>
       </section>
-
-      {/* GALLERY */}
       <section className="px-6 py-16 sm:px-12">
         <div className="mb-10">
           <p className="text-[11px] uppercase tracking-[0.3em] text-[#d4af37]/70">
@@ -142,7 +130,6 @@ const AboutPage = () => {
         </div>
       </section>
 
-      {/* CTA */}
       <section className="bg-[#fef6e9] px-6 py-16 text-center">
         <h2 className="text-2xl  text-[#0b0a2f] font-bold leading-tight ">
           Ready to explore our products?

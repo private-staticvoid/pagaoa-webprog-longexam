@@ -20,7 +20,6 @@ const SignInPage = () => {
       </p>
 
       <form className="mt-8 space-y-5">
-        {/* EMAIL */}
         <div>
           <label className="text-sm text-[#f5d98b]">Email Address</label>
           <input
@@ -30,7 +29,6 @@ const SignInPage = () => {
           />
         </div>
 
-        {/* PASSWORD */}
         <div>
           <label className="text-sm text-[#f5d98b]">Password</label>
           <input
@@ -44,7 +42,6 @@ const SignInPage = () => {
           </p>
         </div>
 
-        {/* OPTIONS */}
         <div className="flex items-center justify-between text-sm">
           <label className="flex items-center gap-2 text-[#f5d98b]/70">
             <input type="checkbox" className="h-4 w-4 accent-[#d4af37]" />
@@ -56,7 +53,6 @@ const SignInPage = () => {
           </button>
         </div>
 
-        {/* BUTTON */}
         <Button
           type="submit"
           className={`${actionButtonClassName} bg-[#d4af37] text-[#070546] hover:bg-[#f5d98b]`}
@@ -64,7 +60,6 @@ const SignInPage = () => {
           Log In
         </Button>
 
-        {/* SOCIAL LOGIN */}
         <Button
           type="button"
           className="w-full border border-[#d4af37] text-[#d4af37] hover:bg-[#d4af37] hover:text-[#070546]"
@@ -73,7 +68,6 @@ const SignInPage = () => {
         </Button>
       </form>
 
-      {/* SIGNUP LINK */}
       <div className="mt-8 border-t border-[#d4af37]/20 pt-6 text-sm text-[#f5d98b]/70">
         No account yet?{" "}
         <Link to="/auth/signup" className="text-[#d4af37] hover:text-[#f5d98b]">

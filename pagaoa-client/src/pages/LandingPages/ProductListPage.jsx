@@ -5,7 +5,6 @@ import products from "../../assets/product-content.js";
 const ProductListPage = () => {
   return (
     <div className="flex w-full flex-col bg-[#070546] text-[#d4af37]">
-      {/* HERO */}
       <section className="relative overflow-hidden">
         <img
           src="https://images.candymag.com/candy/images/2022/01/24/national-university-ph.jpg"
@@ -42,7 +41,6 @@ const ProductListPage = () => {
         </div>
       </section>
 
-      {/* PRODUCTS */}
       <section className="px-6 py-16 sm:px-12">
         <div className="mb-10">
           <p className="text-[11px] uppercase tracking-[0.3em] text-[#d4af37]/70">
