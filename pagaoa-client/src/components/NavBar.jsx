@@ -40,7 +40,7 @@ const TopBar = () => {
         show ? "translate-y-0" : "-translate-y-full"
       }`}
     >
-      🎉 15% Off on Orders Over $100! | Subscribe & Save 15%
+      🎉 15% Off on Orders Over 10 items! | SignUp & Save 15%
     </div>
   );
 };
@@ -51,12 +51,12 @@ const NavBar = () => {
       <TopBar />
 
       <header className="fixed top-0 w-full bg-[#04022d] shadow-md z-40">
-        <div className="max-w-6xl mx-auto flex items-center justify-between px-6 py-4">
+        <div className="max-w-6xl mx-auto flex items-center justify-between px-6 py-5">
           <NavLink to="/" className="flex items-center gap-2">
             <img
               src={logo}
               alt="Creme and Crumbs Logo"
-              className="w-10 h-10 rounded-full object-cover"
+              className="w-10 h-10 "
             />
             <span className="font-serif text-xl text-[#fef6e9]">
               NubdExchange

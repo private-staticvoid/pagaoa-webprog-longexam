@@ -1,23 +1,46 @@
-import Button from './Button';
+import { Link } from "react-router-dom";
+import Button from "./Button";
 
-const ProductCard = ({ product, index }) => {
+// AUTO IMPORT IMAGES
+const images = import.meta.glob("../assets/img/*", {
+  eager: true,
+  import: "default",
+});
+
+const img = Object.fromEntries(
+  Object.entries(images).map(([path, value]) => {
+    const name = path.split("/").pop();
+    return [name, value];
+  }),
+);
+
+const ProductCard = ({ product }) => {
   return (
-    <article className="rounded-3xl border-2 border-zinc-900 bg-zinc-100 p-4">
-      <div className="flex aspect-4/3 items-center justify-center rounded-[1.25rem] bg-zinc-200">
-        <div className="flex h-16 w-16 items-center justify-center border-2 border-zinc-300 bg-zinc-100 text-[10px] font-semibold uppercase tracking-[0.2em] text-zinc-500">
-          Item
-        </div>
+    <div className="overflow-hidden rounded-2xl bg-[#0b0a2f] border border-[#d4af37]/10 hover:shadow-xl transition">
+      {/* IMAGE */}
+      <img
+        src={img[product.image]}
+        alt={product.title}
+        className="h-64 w-full object-cover"
+      />
+
+      {/* CONTENT */}
+      <div className="p-4">
+        <h3 className="text-lg font-semibold text-[#d4af37]">
+          {product.title}
+        </h3>
+
+        <p className="mt-1 text-sm text-[#f5d98b]/70">{product.category}</p>
+
+        <p className="mt-2 text-sm text-[#f5d98b]">{product.price}</p>
+
+        <Link to={`/products/${product.name}`}>
+          <Button className="mt-4 w-full bg-[#d4af37] text-[#070546] hover:bg-[#f5d98b]">
+            View Product
+          </Button>
+        </Link>
       </div>
-      <p className="mt-4 text-[11px] font-semibold uppercase tracking-[0.24em] text-zinc-500">
-        {product.category} {String(index + 1).padStart(2, '0')}
-      </p>
-      <h3 className="mt-2 text-lg font-semibold text-zinc-900">{product.title}</h3>
-      <p className="mt-2 text-base font-bold text-zinc-900">{product.price}</p>
-      <p className="mt-3 text-sm leading-6 text-zinc-600">
-        {product.content[0].substring(0, 120)}...
-      </p>
-      <Button to={`/products/${product.name}`} className="mt-4">View Product</Button>
-    </article>
+    </div>
   );
 };
 

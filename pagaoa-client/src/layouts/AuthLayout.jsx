@@ -1,20 +1,34 @@
-import { Outlet } from 'react-router-dom';
+import { Outlet } from "react-router-dom";
 
 const AuthLayout = () => {
   return (
-    <section className="min-h-screen bg-zinc-100 text-zinc-900">
-      <div className="grid min-h-screen w-full lg:grid-cols-[1fr_0.95fr]">
-        <div className="flex items-center justify-center border-b-2 border-zinc-300 bg-zinc-200 p-8 sm:p-10 lg:border-b-0 lg:border-r-2 lg:border-zinc-300 lg:p-16">
-          <div className="flex w-full max-w-md items-center justify-center rounded-4xl border-2 border-dashed border-zinc-300 bg-zinc-100/60 p-8 sm:p-10">
-            <div className="relative aspect-square w-full max-w-[18rem] border-10 border-zinc-50/90">
-              <span className="absolute left-1/2 top-0 h-full w-2 -translate-x-1/2 rotate-45 bg-zinc-50/90" />
-              <span className="absolute left-1/2 top-0 h-full w-2 -translate-x-1/2 -rotate-45 bg-zinc-50/90" />
-            </div>
+    <section className="h-screen w-screen overflow-hidden bg-[#070546] text-[#d4af37]">
+      <div className="grid h-full w-full grid-cols-1 lg:grid-cols-2">
+        {/* LEFT IMAGE PANEL */}
+        <div className="relative hidden lg:block">
+          <img
+            src="https://images.candymag.com/candy/images/2022/01/24/national-university-ph.jpg"
+            alt="National University"
+            className="h-full w-full object-cover"
+          />
+
+          {/* overlay */}
+          <div className="absolute inset-0 bg-black/50" />
+
+          {/* brand overlay */}
+          <div className="absolute bottom-10 left-10 max-w-md text-[#f5d98b]">
+            <p className="text-[11px] uppercase tracking-[0.3em]">
+              BulldogEx Shop
+            </p>
+            <h2 className="mt-2 text-2xl font-bold leading-tight">
+              Built for students, by students
+            </h2>
           </div>
         </div>
 
-        <main className="flex items-center bg-zinc-50 px-6 py-10 sm:px-10 lg:px-16">
-          <div className="mx-auto w-full max-w-md">
+        {/* RIGHT AUTH PANEL */}
+        <main className="flex h-full items-center justify-center px-6 sm:px-10 lg:px-16">
+          <div className="w-full max-w-md">
             <Outlet />
           </div>
         </main>

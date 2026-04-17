@@ -1,37 +1,66 @@
-import Button from '../../components/Button.jsx';
-import ProductList from '../../components/ProductList.jsx';
-import products from '../../assets/product-content.js';
+import Button from "../../components/Button.jsx";
+import ProductList from "../../components/ProductList.jsx";
+import products from "../../assets/product-content.js";
 
 const ProductListPage = () => {
   return (
-    <div className="flex w-full flex-col gap-6">
-      <section className="border-y-2 border-zinc-900 bg-zinc-50 px-4 py-6 sm:px-6 sm:py-8 lg:px-8">
-        <p className="mb-3 text-[11px] font-semibold uppercase tracking-[0.28em] text-zinc-500">
-          Products
-        </p>
-        <h1 className="max-w-xl text-3xl font-bold leading-tight text-zinc-900 sm:text-4xl">
-          Shop campus essentials in a simple product grid
-        </h1>
-        <p className="mt-4 max-w-lg text-sm leading-7 text-zinc-600 sm:text-base">
-          Browse practical items for class, study, commute, and everyday campus routines.
-        </p>
-        <div className="mt-6">
-          <Button to="/">Back Home</Button>
+    <div className="flex w-full flex-col bg-[#070546] text-[#d4af37]">
+      {/* HERO */}
+      <section className="relative overflow-hidden">
+        <img
+          src="https://images.candymag.com/candy/images/2022/01/24/national-university-ph.jpg"
+          alt="Products Hero"
+          className="h-[83vh] w-full object-cover"
+        />
+
+        <div className="absolute inset-0 bg-black/40" />
+
+        <div className="absolute inset-0 flex items-center justify-start px-6 sm:px-12">
+          <div className="max-w-xl [text-shadow:2px_2px_10px_rgba(0,0,0,0.85)]">
+            <p className="text-[11px] uppercase tracking-[0.3em] font-bold text-[#f5d98b]">
+              Products
+            </p>
+
+            <h1 className="mt-3 text-4xl font-bold sm:text-5xl">
+              Explore Campus Essentials
+            </h1>
+
+            <p className="mt-4 text-sm text-[#f5d98b] sm:text-base">
+              Browse uniforms, merchandise, and student essentials in one
+              convenient place.
+            </p>
+
+            <div className="mt-6">
+              <Button
+                to="/"
+                className="bg-[#d4af37] text-[#070546] hover:bg-[#f5d98b]"
+              >
+                Back Home
+              </Button>
+            </div>
+          </div>
         </div>
       </section>
 
-      <section className="border-y-2 border-zinc-900 bg-zinc-50 px-4 py-6 sm:px-6 sm:py-8 lg:px-8">
-        <div className="mb-6">
-          <p className="text-[11px] font-semibold uppercase tracking-[0.28em] text-zinc-500">
-            Featured Products
+      {/* PRODUCTS */}
+      <section className="px-6 py-16 sm:px-12">
+        <div className="mb-10">
+          <p className="text-[11px] uppercase tracking-[0.3em] text-[#d4af37]/70">
+            Featured Collection
           </p>
-          <h2 className="mt-2 text-2xl font-semibold text-zinc-900">Product card grid</h2>
+
+          <h2 className="mt-2 text-2xl font-semibold">Product Selection</h2>
+
+          <p className="mt-3 max-w-2xl text-sm text-[#f5d98b]/70">
+            Discover products selected for student convenience, quality, and
+            everyday campus use.
+          </p>
         </div>
 
         <ProductList products={products} />
       </section>
     </div>
   );
-}
+};
 
-export default ProductListPage
+export default ProductListPage;
