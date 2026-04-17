@@ -54,7 +54,7 @@ function ProductPage() {
       <section className="px-6 pb-8 sm:px-12">
         <div className="mx-auto max-w-3xl">
           {/* IMAGE - Forced Square and smaller max-width */}
-          <div className="mx-auto max-w-[350px] overflow-hidden rounded-xl bg-[#0b0a2f]">
+          <div className="mx-auto max-w-87.5 overflow-hidden rounded-xl bg-[#0b0a2f]">
             <img
               src={img[product.image]}
               alt={product.title}
