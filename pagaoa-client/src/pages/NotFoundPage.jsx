@@ -41,7 +41,6 @@ const NotFoundPage = () => {
               </div>
             </div>
 
-            {/* NEW ROBOT IMAGE */}
             <div className="order-1 md:order-2">
               <div className="relative">
                 <div className="absolute inset-0 animate-pulse rounded-full bg-[#d4af37]/10 blur-3xl"></div>
@@ -56,7 +55,6 @@ const NotFoundPage = () => {
         </div>
       </section>
 
-      {/* QUICK LINKS SECTION - Removed Get Help */}
       <section className="bg-[#0b0a2f] px-6 py-16 sm:px-12">
         <div className="mx-auto max-w-5xl">
           <h3 className="text-sm font-bold uppercase tracking-widest text-[#d4af37]/50">

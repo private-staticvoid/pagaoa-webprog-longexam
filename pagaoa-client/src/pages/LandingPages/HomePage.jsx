@@ -104,7 +104,7 @@ const HomePage = () => {
 
                 <p className="mt-1 text-sm text-[#f5d98b]/70">{item.desc}</p>
 
-                <Link to={`/product/${item.name}`}>
+                <Link to={`/products/${item.name}`}>
                   <Button className="mt-4 w-full bg-[#d4af37] text-[#070546] hover:bg-[#f5d98b]">
                     View Product
                   </Button>
