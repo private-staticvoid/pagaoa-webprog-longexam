@@ -19,7 +19,7 @@ function ProductPage() {
   const product = products.find((p) => p.name === name);
   if (!product) {
     return (
-      <div className="flex h-[60vh]  w-full items-center justify-center bg-gradient-to-b from-[#070546] to-[#0b0b2e] text-[#d4af37] px-4">
+      <div className="flex h-[60vh]  w-full items-center justify-center bg-linear-to-b from-[#070546] to-[#0b0b2e] text-[#d4af37] px-4">
         <div className="w-full max-w-md rounded-2xl border border-[#d4af37]/20 bg-[#0b0b2e]/80 p-8 text-center shadow-2xl backdrop-blur-md">
           <div className="mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-full bg-[#d4af37]/10">
             <span className="text-2xl">⚠️</span>
