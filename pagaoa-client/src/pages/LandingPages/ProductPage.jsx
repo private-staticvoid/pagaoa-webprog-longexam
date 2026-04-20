@@ -17,16 +17,30 @@ const img = Object.fromEntries(
 function ProductPage() {
   const { name } = useParams();
   const product = products.find((p) => p.name === name);
-
   if (!product) {
     return (
-      <div className="flex w-full flex-col bg-[#070546] text-[#d4af37]">
-        <section className="px-6 py-6 text-center">
-          <h1 className="text-2xl font-bold">Product not found</h1>
-          <Button to="/products" className="mt-4 bg-[#d4af37] text-[#070546]">
+      <div className="flex h-[60vh]  w-full items-center justify-center bg-gradient-to-b from-[#070546] to-[#0b0b2e] text-[#d4af37] px-4">
+        <div className="w-full max-w-md rounded-2xl border border-[#d4af37]/20 bg-[#0b0b2e]/80 p-8 text-center shadow-2xl backdrop-blur-md">
+          <div className="mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-full bg-[#d4af37]/10">
+            <span className="text-2xl">⚠️</span>
+          </div>
+
+          <h1 className="text-2xl font-bold tracking-wide">
+            Product not found
+          </h1>
+
+          <p className="mt-2 text-sm text-[#d4af37]/70">
+            The product you’re looking for doesn’t exist or may have been
+            removed.
+          </p>
+
+          <Button
+            to="/products"
+            className="mt-6 inline-flex w-full items-center justify-center rounded-lg bg-[#d4af37] px-4 py-2 font-semibold text-[#070546] transition hover:scale-[1.02] hover:shadow-lg active:scale-95"
+          >
             Back to Products
           </Button>
-        </section>
+        </div>
       </div>
     );
   }
