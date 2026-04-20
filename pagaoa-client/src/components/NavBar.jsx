@@ -55,7 +55,7 @@ const NavBar = () => {
           <NavLink to="/" className="flex items-center gap-2">
             <img src={logo} alt="nubdexchange logo" className="w-20 h-13 " />
             <span className="font-serif text-xl text-[#fef6e9]">
-              NubdExchange
+              BulldogEx{" "}
             </span>
           </NavLink>
 
