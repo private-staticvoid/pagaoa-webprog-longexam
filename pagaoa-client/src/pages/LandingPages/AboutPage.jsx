@@ -61,12 +61,12 @@ const AboutPage = () => {
 
           <div className="flex justify-center items-center h-full">
             <div className="relative">
-              <div className="absolute inset-0 -z-10 h-56 w-56 sm:h-64 sm:w-64 rounded-full bg-[radial-gradient(circle,rgba(7,6,69,0.2)_0%,rgba(7,6,69,0.8)_60%,rgba(7,6,69,1)_100%)] blur-2xl" />
+              <div className="absolute inset-0 -z-10 h-72 w-72 sm:h-80 sm:w-80 rounded-full bg-[radial-gradient(circle,rgba(7,6,69,0.2)_0%,rgba(7,6,69,0.8)_60%,rgba(7,6,69,1)_100%)] blur-2xl" />
 
               <img
                 src={logo}
                 alt="Logo"
-                className="h-48 w-48 sm:h-56 sm:w-56 object-contain p-4"
+                className="h-64 w-64 sm:h-80 sm:w-80 object-contain p-4"
               />
             </div>
           </div>

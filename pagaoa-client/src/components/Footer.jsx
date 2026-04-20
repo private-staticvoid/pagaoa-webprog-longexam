@@ -10,7 +10,7 @@ const Footer = () => {
             <img
               src={logo}
               alt="NubdExchange Logo"
-              className="w-10 h-10 rounded-full object-cover"
+              className="w-20 h-10 rounded-full object-cover"
             />
             <span className="font-serif text-xl text-[#d4af37]">
               NubdExchange

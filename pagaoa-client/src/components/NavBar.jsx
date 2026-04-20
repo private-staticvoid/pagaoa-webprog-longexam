@@ -53,7 +53,7 @@ const NavBar = () => {
       <header className="fixed top-0 w-full bg-[#04022d] shadow-md z-40">
         <div className="max-w-6xl mx-auto flex items-center justify-between px-6 py-5">
           <NavLink to="/" className="flex items-center gap-2">
-            <img src={logo} alt="nubdexchange logo" className="w-10 h-10 " />
+            <img src={logo} alt="nubdexchange logo" className="w-20 h-13 " />
             <span className="font-serif text-xl text-[#fef6e9]">
               NubdExchange
             </span>
