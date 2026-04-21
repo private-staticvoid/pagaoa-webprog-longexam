@@ -93,8 +93,6 @@ function ProductPage() {
               </p>
             ))}
           </div>
-
-          {/* ACTIONS */}
           <div className="mt-6 flex gap-3 border-t border-[#d4af37]/20 pt-4">
             <Button className="flex-1 bg-[#d4af37] text-[#070546] hover:bg-[#f5d98b]">
               Add to Cart
